@@ -8,10 +8,22 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fishNco.truecitizenquiz.model.Question;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button button_false;
     private Button button_true;
     private TextView textView_question;
+    private Question[] questionBank = new Question[] {
+            new Question(R.string.question_amendments, false),
+            new Question(R.string.question_constitution, true),
+            new Question(R.string.question_declaration, true),
+            new Question(R.string.question_independence_rights, true),
+            new Question (R.string.question_religion, true),
+            new Question(R.string.question_government, false),
+            new Question(R.string.question_government_feds, false),
+            new Question(R.string.question_government_senators, true),
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
