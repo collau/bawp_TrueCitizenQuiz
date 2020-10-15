@@ -16,4 +16,5 @@
     <string name="correct_answer">That\'s correct!</string>
     <string name="wrong_answer">That\'s wrong.</string>
     <string name="text_next">Next</string>
+    <string name="text_previous">Previous</string>
 </resources>
